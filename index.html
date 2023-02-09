@@ -42,5 +42,30 @@
 <script>
 document.getElementById("demo").innerHTML = navigator.onLine;
 </script>
+
+<button id="barrelRoll">Barrel Roll</button>
+
+<script>
+  function rotatePage(degrees) {
+    document.body.style.transform = `rotate(${degrees}deg)`;
+    document.body.style.transformOrigin = '50% 50%';
+  }
+
+  const button = document.getElementById('barrelRoll');
+  button.addEventListener('click', function() {
+    let degrees = 0;
+    const interval = setInterval(function() {
+      rotatePage(degrees);
+      degrees += 1;
+      if (degrees >= 360) {
+        clearInterval(interval);
+      }
+    }, 40);
+  });
+</script>
+
+
+
+
 </body>
 </html>
