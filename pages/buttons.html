@@ -6,23 +6,38 @@
 				position: relative;
 				border: none;
 				transition: .4s ease-in;
-				z-index: 1;				
+				z-index: 1;
+				padding: 5px;
 		}
-		button:before,button:after{
+	  
+		button:before, button:after{
 			position:absolute;
 			content: "";
 			z-index: -1;		
 		}
 		
+	  	/*  Button 1  */
+	  	/*  no Effect  */
+	  
+	  
+	  	/*  Button 2  */
+	  	/*  Glow Effect  */
+	  
 		.btn-2:hover{
 			background: #ff96ad;
 			box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
 		}
 		
+	  	/*  Button 3  */
+	  	/*  Door Effect  */
+	  
 		.btn-3:hover{
 			box-shadow: inset -10.5em 0 0 0 #ff96ad, inset 10,5em 0 0 0 #ff96ad;
 		}
-		
+
+	  	/*  Button 4  */
+	  	/*  Shutter Down Effect  */	  
+	  
 		.btn-4::after{
 			height: 0;
 			left: 0;
@@ -33,6 +48,9 @@
 		.btn-4:hover::after{
 			height:100%;
 		}
+
+	  	/*  Button 5  */
+	  	/*  Shutter Up Effect  */	  
 		
 		.btn-5::after{
 			height:0;
@@ -45,11 +63,17 @@
 			height:100%;
 		}
 		
+	  	/*  Button 6  */
+	  	/*  Doubble Effect  */
+	  
 		.btn-6:hover{
 			box-shadow: 10px 10px 0px #ff96ad;
 			top: -5px;
 			left: -5px;
 		}
+	  
+	  	/*  Button 7  */
+	  	/*  Shine Effect  */
 		
 		.btn-7::after{
 			height:100%;
@@ -64,10 +88,16 @@
 			height:100%;
 			width: 135%;
 		}
+	  
+	  	/*  Button 8  */
+	  	/*  Move Left Effect  */
 		
 		.btn-8:hover::after{
 			width:100%;
 		}
+	  
+	  	/*  Button 9  */
+	  	/*  Border Effect  */
 		
 		.btn-9:hover{
 			border: 2px solid #ff96ad;
@@ -80,7 +110,8 @@
 
 <body>
 <h1>Buttons with css hover effekts</h1>
-<a href="http://github.glock.no/"> Home </a>
+<a href="http://github.glock.no/"> Home </a><hr>
+	
 <div>
 <button class="btn-1"> No Effect </button>
 <button class="btn-2"> Glow Effect </button>
